@@ -1,0 +1,115 @@
+.con {
+  background-color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 400px;
+  width: 300px;
+  -webkit-box-shadow: 20px 20px 50px grey;
+          box-shadow: 20px 20px 50px grey;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  font-variant: small-caps;
+  color: blueviolet;
+  text-align: center;
+  margin: 30px;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 30px;
+}
+
+form .user, form .pass {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  width: 90%;
+  height: 50px;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button-container .add, .button-container .submit {
+  width: 45%;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  font-variant: small-caps;
+  padding: 2px;
+  background-color: blueviolet;
+  border-radius: 5px;
+  color: white;
+}
+
+::-webkit-input-placeholder {
+  font-size: 20px;
+}
+
+:-ms-input-placeholder {
+  font-size: 20px;
+}
+
+::-ms-input-placeholder {
+  font-size: 20px;
+}
+
+::placeholder {
+  font-size: 20px;
+}
+
+@media screen and (min-width: 800px) {
+  .con {
+    height: 600px;
+    width: 600px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .con {
+    background-color: black;
+  }
+  .user, form .pass {
+    background-color: #7d6b91;
+    color: black;
+  }
+  ::-webkit-input-placeholder {
+    color: white;
+  }
+  :-ms-input-placeholder {
+    color: white;
+  }
+  ::-ms-input-placeholder {
+    color: white;
+  }
+  ::placeholder {
+    color: white;
+  }
+}
+/*# sourceMappingURL=Container.css.map */
